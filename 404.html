@@ -12,6 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     (function () {
+      // Lokal als Datei geöffnet (file://)? Dann keine <base> setzen, sonst
+      // würden die Links auf das Hauptverzeichnis der Festplatte zeigen.
+      if (location.protocol === "file:") return;
       // Hauptordner bestimmen: "/meine-webseite/" auf GitHub Pages, sonst "/"
       var p = location.pathname;
       var i = p.indexOf("/meine-webseite/");
