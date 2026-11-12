@@ -1,0 +1,4 @@
+# Binärdateien nie umwandeln
+*.pdf binary
+*.png binary
+*.woff2 binary
