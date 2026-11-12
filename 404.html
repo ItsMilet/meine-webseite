@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+  404-SEITE
+  GitHub Pages zeigt diese Seite bei JEDER falschen Adresse an, auch in
+  Unterordnern (z. B. /meine-webseite/gibt/es/nicht). Damit die relativen
+  Pfade trotzdem stimmen, setzt das kleine Skript unten eine <base>-Adresse
+  auf den Hauptordner der Webseite.
+-->
+<html lang="de" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      // Hauptordner bestimmen: "/meine-webseite/" auf GitHub Pages, sonst "/"
+      var p = location.pathname;
+      var i = p.indexOf("/meine-webseite/");
+      var base = i !== -1 ? p.slice(0, i) + "/meine-webseite/" : "/";
+      document.write('<base href="' + base + '">');
+    })();
+  </script>
+  <title data-i18n="meta.404.title">Seite nicht gefunden · Felix Werthner</title>
+  <meta name="description" content="Diese Seite gibt es leider nicht." data-i18n-attr="content:meta.404.desc">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+</head>
+<body data-page="404">
+  <a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+  <header id="site-header"></header>
+
+  <main id="inhalt">
+    <section class="container lost">
+      <p class="big-no" aria-hidden="true"><span>4</span><span>0</span><span>4</span></p>
+      <h1 style="font-size: var(--step-3)" data-i18n-html="404.title">Hier ist nur <em>leeres Papier</em>.</h1>
+      <p class="lead" data-i18n="404.text">Diese Seite gibt es nicht, oder sie ist umgezogen, ohne mir Bescheid zu sagen. Vielleicht ein Tippfehler in der Adresse?</p>
+      <p class="hand" data-i18n="404.hand">Kein Problem, das passiert den Besten.</p>
+      <div class="hero-actions">
+        <a class="btn" href="index.html"><span class="arrow" aria-hidden="true">←</span> <span data-i18n="404.home">Zurück zur Startseite</span></a>
+        <a class="arrow-link" href="projekte.html"><span data-i18n="404.projects">Oder Projekte stöbern</span> <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

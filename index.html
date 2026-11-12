@@ -1,0 +1,189 @@
+<!doctype html>
+<!--
+  STARTSEITE
+  Texte änderst du am besten in lang/de.json und lang/en.json (Schlüssel = data-i18n).
+  Der deutsche Text hier im HTML ist nur die Grundlage für Suchmaschinen und
+  für den Fall, dass JavaScript ausgeschaltet ist.
+-->
+<html lang="de" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.home.title">Felix Werthner · Webseiten mit Wärme</title>
+  <meta name="description" content="Felix Werthner gestaltet und baut Webseiten. Hier findest du meinen Werdegang, ausgewählte Projekte und einen direkten Weg zum Kontakt." data-i18n-attr="content:meta.home.desc">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="canonical" href="https://itsmilet.github.io/meine-webseite/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Felix Werthner">
+  <meta property="og:title" content="Felix Werthner · Webseiten mit Wärme" data-i18n-attr="content:meta.home.title">
+  <meta property="og:description" content="Felix Werthner gestaltet und baut Webseiten. Werdegang, Projekte und Kontakt." data-i18n-attr="content:meta.home.desc">
+  <meta property="og:url" content="https://itsmilet.github.io/meine-webseite/">
+  <meta property="og:image" content="https://itsmilet.github.io/meine-webseite/assets/img/og-bild.png">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+  <header id="site-header"></header>
+
+  <main id="inhalt">
+
+    <!-- BEGRÜSSUNG -->
+    <section class="container hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <span class="eyebrow reveal" data-i18n="home.hero.eyebrow">Webseiten gestalten &amp; bauen</span>
+        <h1 id="hero-title" class="reveal" style="--delay:.08s">
+          <span class="line">Felix</span>
+          <span class="line"><em>Werthner</em></span>
+        </h1>
+        <p class="lead reveal ph-text" style="--delay:.16s" data-i18n="home.hero.lead">[PLATZHALTER: Ein Satz, was du machst, z. B. „Ich gestalte und baue Webseiten, die sich warm anfühlen, schnell laden und einfach funktionieren.“]</p>
+
+        <div class="now-note reveal" style="--delay:.24s">
+          <!-- kleiner handgezeichneter Pfeil -->
+          <svg viewBox="0 0 52 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6c10 1 22 6 28 15s9 13 16 14"/><path d="M40 29l7 6-9 2"/></svg>
+          <p>
+            <span class="hand" data-i18n="home.hero.nowLabel">Gerade arbeite ich an …</span><br>
+            <span class="muted ph-text" data-i18n="home.hero.now">[PLATZHALTER: woran du gerade arbeitest, z. B. „einer Webseite für eine kleine Bäckerei in Ottakring“]</span>
+          </p>
+        </div>
+
+        <div class="hero-actions reveal" style="--delay:.32s">
+          <a class="btn" href="kontakt.html"><span data-i18n="home.hero.cta">Schreib mir</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="arrow-link" href="projekte.html"><span data-i18n="home.hero.cta2">Projekte ansehen</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <figure class="frame reveal" style="--delay:.2s">
+        <div class="frame-media corners" style="--ratio: 4 / 5">
+          <!-- BILD ERSETZEN: <img src="assets/img/felix-portrait.jpg" alt="Felix Werthner …" width="1200" height="1500"> -->
+          <div class="ph-img" role="img" aria-label="Platzhalter für ein Porträtfoto von Felix Werthner" data-i18n-attr="aria-label:home.hero.imgAlt">
+            <strong data-i18n="home.hero.imgTitle">[PLATZHALTER: Porträtfoto von Felix]</strong>
+            <span data-i18n="img.portrait">Hochformat 4:5 · ca. 1200 × 1500 px</span>
+          </div>
+        </div>
+        <figcaption><span class="fig-no">Abb. 1</span><span class="ph-text" data-i18n="home.hero.caption">[PLATZHALTER: Bildunterschrift, z. B. Ort und Jahr des Fotos]</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- ÜBER MICH – VORSCHAU -->
+    <section class="section about-teaser" aria-labelledby="about-title">
+      <div class="container split">
+        <div class="reveal">
+          <h2 id="about-title" class="eyebrow" data-i18n="home.about.eyebrow">Über mich</h2>
+        </div>
+        <div class="stack-lg">
+          <blockquote class="reveal ph-text" data-i18n="home.about.quote">[PLATZHALTER: zwei, drei Sätze, die dich als Person greifbar machen, z. B. was dich an Webseiten begeistert und wie du arbeitest]</blockquote>
+          <p class="reveal ph-text" data-i18n="home.about.text">[PLATZHALTER: kurzer Absatz mit etwas mehr Hintergrund: woher du kommst, was du gelernt hast und für wen du am liebsten arbeitest. Ungefähr zwei bis drei Zeilen lang, damit das Layout echt wirkt.]</p>
+          <a class="arrow-link reveal" href="ueber-mich.html"><span data-i18n="home.about.link">Mehr über mich</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJEKTE – AUSWAHL -->
+    <section class="section" aria-labelledby="projects-title">
+      <div class="container stack-lg">
+        <div class="split">
+          <span class="eyebrow reveal" data-i18n="home.projects.eyebrow">Ausgewählte Projekte</span>
+          <h2 id="projects-title" class="reveal" data-i18n-html="home.projects.title">Ein paar Dinge, die ich <em>gebaut</em> habe</h2>
+        </div>
+
+        <ul class="project-grid project-feature">
+          <li class="project-card reveal">
+            <div class="frame">
+              <div class="frame-media" style="--ratio: 4 / 3">
+                <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 1" data-i18n-attr="aria-label:proj.1.imgAlt">
+                  <strong data-i18n="proj.1.imgTitle">[PLATZHALTER: Bild Projekt 1]</strong>
+                  <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta"><span class="no">Nr. 01</span><span>[PLATZHALTER: 2025]</span></div>
+            <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.1.title">[PLATZHALTER: Projekttitel 1]</a></h3>
+            <p class="ph-text" data-i18n="proj.1.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+            <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+          </li>
+          <li class="project-card reveal" style="--delay:.1s">
+            <div class="frame">
+              <div class="frame-media" style="--ratio: 4 / 5">
+                <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 2" data-i18n-attr="aria-label:proj.2.imgAlt">
+                  <strong data-i18n="proj.2.imgTitle">[PLATZHALTER: Bild Projekt 2]</strong>
+                  <span data-i18n="img.portrait">Hochformat 4:5 · ca. 1200 × 1500 px</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta"><span class="no">Nr. 02</span><span>[PLATZHALTER: 2024]</span></div>
+            <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.2.title">[PLATZHALTER: Projekttitel 2]</a></h3>
+            <p class="ph-text" data-i18n="proj.2.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+            <ul class="tags"><li class="tag">WordPress</li><li class="tag">CSS</li></ul>
+          </li>
+          <li class="project-card reveal" style="--delay:.2s">
+            <div class="frame">
+              <div class="frame-media" style="--ratio: 1 / 1">
+                <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 3" data-i18n-attr="aria-label:proj.3.imgAlt">
+                  <strong data-i18n="proj.3.imgTitle">[PLATZHALTER: Bild Projekt 3]</strong>
+                  <span data-i18n="img.square">Quadrat 1:1 · ca. 1200 × 1200 px</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-meta"><span class="no">Nr. 03</span><span>[PLATZHALTER: 2024]</span></div>
+            <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.3.title">[PLATZHALTER: Projekttitel 3]</a></h3>
+            <p class="ph-text" data-i18n="proj.3.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+            <ul class="tags"><li class="tag">Figma</li><li class="tag">HTML</li></ul>
+          </li>
+        </ul>
+
+        <a class="arrow-link reveal" href="projekte.html"><span data-i18n="home.projects.link">Alle Projekte ansehen</span> <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- WERDEGANG – AUSSCHNITT -->
+    <section class="section" aria-labelledby="cv-title">
+      <div class="container split">
+        <div class="stack reveal">
+          <span class="eyebrow" data-i18n="home.cv.eyebrow">Werdegang</span>
+          <h2 id="cv-title" style="font-size: var(--step-2)" data-i18n-html="home.cv.title">Wie ich <em>hierher</em> gekommen bin</h2>
+          <p class="muted" data-i18n="home.cv.text">Ein kurzer Ausschnitt. Die ganze Geschichte erzählt die Zeitleiste.</p>
+        </div>
+        <div class="stack-lg">
+          <ol class="mini-timeline">
+            <li class="reveal">
+              <span class="when" data-i18n="cv.1.when">[PLATZHALTER: 2024 – heute] · [PLATZHALTER: Ort]</span>
+              <h3 data-i18n="cv.1.title">[PLATZHALTER: aktuelle Station, z. B. Selbstständig als Webentwickler]</h3>
+            </li>
+            <li class="reveal" style="--delay:.1s">
+              <span class="when" data-i18n="cv.2.when">[PLATZHALTER: 2021 – 2024] · [PLATZHALTER: Ort]</span>
+              <h3 data-i18n="cv.2.title">[PLATZHALTER: Station davor, z. B. Junior-Entwickler bei einer Agentur]</h3>
+            </li>
+            <li class="reveal" style="--delay:.2s">
+              <span class="when" data-i18n="cv.3.when">[PLATZHALTER: 2018 – 2021] · [PLATZHALTER: Ort]</span>
+              <h3 data-i18n="cv.3.title">[PLATZHALTER: Ausbildung, z. B. HTL für Informationstechnologie]</h3>
+            </li>
+          </ol>
+          <a class="arrow-link reveal" href="werdegang.html"><span data-i18n="home.cv.link">Zur ganzen Zeitleiste</span> <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT-EINLADUNG -->
+    <section class="next-step" aria-labelledby="contact-cta-title" style="background: var(--sand)">
+      <div class="container split">
+        <span class="eyebrow reveal" data-i18n="home.contact.eyebrow">Kontakt</span>
+        <div class="stack-lg reveal">
+          <h2 id="contact-cta-title" data-i18n-html="home.contact.title">Hast du eine Idee für eine Webseite? <em>Erzähl mir davon.</em></h2>
+          <p class="ph-text" data-i18n="home.contact.text">[PLATZHALTER: ein, zwei einladende Sätze, z. B. dass ein erstes Gespräch unverbindlich ist und wie schnell du dich meldest]</p>
+          <div><a class="btn" href="kontakt.html"><span data-i18n="home.contact.cta">Nachricht schreiben</span> <span class="arrow" aria-hidden="true">→</span></a></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

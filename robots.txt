@@ -1,0 +1,5 @@
+# Alle Suchmaschinen dürfen die Seite lesen.
+User-agent: *
+Allow: /
+
+Sitemap: https://itsmilet.github.io/meine-webseite/sitemap.xml

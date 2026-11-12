@@ -1,0 +1,169 @@
+<!doctype html>
+<!--
+  PROJEKTE
+  Neues Projekt hinzufügen: einen <li class="project-card"> kopieren und anpassen.
+  data-category = eine oder mehrere Kategorien, mit Leerzeichen getrennt:
+    webseiten · apps · design · eigene
+  Neue Kategorie? Einfach einen weiteren Filter-Button mit data-filter="…" ergänzen.
+-->
+<html lang="de" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.projects.title">Projekte · Felix Werthner</title>
+  <meta name="description" content="Eine Auswahl an Webseiten und Webprojekten von Felix Werthner, mit Technik, Jahr und Hintergrund." data-i18n-attr="content:meta.projects.desc">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="canonical" href="https://itsmilet.github.io/meine-webseite/projekte.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Felix Werthner">
+  <meta property="og:title" content="Projekte · Felix Werthner" data-i18n-attr="content:meta.projects.title">
+  <meta property="og:description" content="Eine Auswahl an Webseiten und Webprojekten von Felix Werthner." data-i18n-attr="content:meta.projects.desc">
+  <meta property="og:url" content="https://itsmilet.github.io/meine-webseite/projekte.html">
+  <meta property="og:image" content="https://itsmilet.github.io/meine-webseite/assets/img/og-bild.png">
+  <meta property="og:locale" content="de_AT">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+</head>
+<body data-page="projekte">
+  <a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+  <header id="site-header"></header>
+
+  <main id="inhalt">
+
+    <header class="container page-head">
+      <span class="eyebrow reveal" data-i18n="projects.eyebrow">Projekte</span>
+      <h1 class="reveal" data-i18n-html="projects.title">Arbeiten, auf die ich <em>stolz</em> bin</h1>
+      <p class="lead reveal ph-text" data-i18n="projects.lead">[PLATZHALTER: ein, zwei Sätze zur Auswahl, z. B. welche Art von Projekten du hier zeigst und was sie verbindet]</p>
+    </header>
+
+    <section class="container" aria-labelledby="list-title" style="padding-bottom: clamp(3rem, 8vw, 6rem)">
+      <h2 id="list-title" class="sr-only" data-i18n="projects.listTitle">Projektliste</h2>
+
+      <div class="filter-bar reveal" role="group" aria-label="Projekte nach Kategorie filtern" data-i18n-attr="aria-label:projects.filterLabel">
+        <button type="button" class="filter-btn" data-filter="alle" aria-pressed="true" data-i18n="projects.f.all">Alle</button>
+        <button type="button" class="filter-btn" data-filter="webseiten" aria-pressed="false" data-i18n="projects.f.web">Webseiten</button>
+        <button type="button" class="filter-btn" data-filter="apps" aria-pressed="false" data-i18n="projects.f.apps">Web-Apps</button>
+        <button type="button" class="filter-btn" data-filter="design" aria-pressed="false" data-i18n="projects.f.design">Gestaltung</button>
+        <button type="button" class="filter-btn" data-filter="eigene" aria-pressed="false" data-i18n="projects.f.own">Eigene Projekte</button>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite"></p>
+
+      <ul class="project-grid">
+
+        <!-- PROJEKT 1 -->
+        <li class="project-card reveal" data-category="webseiten design">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <!-- BILD ERSETZEN: <img src="assets/img/projekt-1.jpg" alt="…" width="1600" height="1200" loading="lazy"> -->
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 1" data-i18n-attr="aria-label:proj.1.imgAlt">
+                <strong data-i18n="proj.1.imgTitle">[PLATZHALTER: Bild Projekt 1]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 01</span><span data-i18n="projects.f.web">Webseiten</span><span>[PLATZHALTER: 2025]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.1.title">[PLATZHALTER: Projekttitel 1]</a></h3>
+          <p class="ph-text" data-i18n="proj.1.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+        </li>
+
+        <!-- PROJEKT 2 -->
+        <li class="project-card reveal" data-category="webseiten" style="--delay:.08s">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 2" data-i18n-attr="aria-label:proj.2.imgAlt">
+                <strong data-i18n="proj.2.imgTitle">[PLATZHALTER: Bild Projekt 2]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 02</span><span data-i18n="projects.f.web">Webseiten</span><span>[PLATZHALTER: 2024]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.2.title">[PLATZHALTER: Projekttitel 2]</a></h3>
+          <p class="ph-text" data-i18n="proj.2.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">WordPress</li><li class="tag">CSS</li></ul>
+        </li>
+
+        <!-- PROJEKT 3 -->
+        <li class="project-card reveal" data-category="design" style="--delay:.16s">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 3" data-i18n-attr="aria-label:proj.3.imgAlt">
+                <strong data-i18n="proj.3.imgTitle">[PLATZHALTER: Bild Projekt 3]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 03</span><span data-i18n="projects.f.design">Gestaltung</span><span>[PLATZHALTER: 2024]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.3.title">[PLATZHALTER: Projekttitel 3]</a></h3>
+          <p class="ph-text" data-i18n="proj.3.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">Figma</li><li class="tag">HTML</li></ul>
+        </li>
+
+        <!-- PROJEKT 4 -->
+        <li class="project-card reveal" data-category="apps">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 4" data-i18n-attr="aria-label:proj.4.imgAlt">
+                <strong data-i18n="proj.4.imgTitle">[PLATZHALTER: Bild Projekt 4]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 04</span><span data-i18n="projects.f.apps">Web-Apps</span><span>[PLATZHALTER: 2023]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.4.title">[PLATZHALTER: Projekttitel 4]</a></h3>
+          <p class="ph-text" data-i18n="proj.4.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">JavaScript</li><li class="tag">API</li></ul>
+        </li>
+
+        <!-- PROJEKT 5 -->
+        <li class="project-card reveal" data-category="eigene apps" style="--delay:.08s">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 5" data-i18n-attr="aria-label:proj.5.imgAlt">
+                <strong data-i18n="proj.5.imgTitle">[PLATZHALTER: Bild Projekt 5]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 05</span><span data-i18n="projects.f.own">Eigene Projekte</span><span>[PLATZHALTER: 2023]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.5.title">[PLATZHALTER: Projekttitel 5]</a></h3>
+          <p class="ph-text" data-i18n="proj.5.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">HTML</li><li class="tag">CSS</li></ul>
+        </li>
+
+        <!-- PROJEKT 6 -->
+        <li class="project-card reveal" data-category="eigene design" style="--delay:.16s">
+          <div class="frame">
+            <div class="frame-media" style="--ratio: 4 / 3">
+              <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild von Projekt 6" data-i18n-attr="aria-label:proj.6.imgAlt">
+                <strong data-i18n="proj.6.imgTitle">[PLATZHALTER: Bild Projekt 6]</strong>
+                <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta"><span class="no">Nr. 06</span><span data-i18n="projects.f.own">Eigene Projekte</span><span>[PLATZHALTER: 2022]</span></div>
+          <h3><a href="projekte/projekt-vorlage.html" data-i18n="proj.6.title">[PLATZHALTER: Projekttitel 6]</a></h3>
+          <p class="ph-text" data-i18n="proj.6.desc">[PLATZHALTER: ein, zwei Sätze, worum es ging und was das Ergebnis war]</p>
+          <ul class="tags" aria-label="Technik" data-i18n-attr="aria-label:projects.tech"><li class="tag">Figma</li><li class="tag">CSS</li></ul>
+        </li>
+
+      </ul>
+    </section>
+
+    <nav class="next-step" aria-label="Weiterlesen" data-i18n-attr="aria-label:next.label">
+      <div class="container">
+        <a href="werdegang.html" class="reveal">
+          <span class="eyebrow" data-i18n="next.eyebrow">Weiterlesen</span>
+          <span class="next-title"><span data-i18n="projects.next">Wie alles angefangen hat: mein Werdegang</span> <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

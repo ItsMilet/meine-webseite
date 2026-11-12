@@ -1,0 +1,142 @@
+<!doctype html>
+<!-- KONTAKT – Texte in lang/*.json (Schlüssel "contact.…") -->
+<html lang="de" data-root="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.contact.title">Kontakt · Felix Werthner</title>
+  <meta name="description" content="Schreib Felix Werthner eine Nachricht: für eine neue Webseite, eine Frage oder einfach zum Kennenlernen." data-i18n-attr="content:meta.contact.desc">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="canonical" href="https://itsmilet.github.io/meine-webseite/kontakt.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Felix Werthner">
+  <meta property="og:title" content="Kontakt · Felix Werthner" data-i18n-attr="content:meta.contact.title">
+  <meta property="og:description" content="Schreib Felix Werthner eine Nachricht." data-i18n-attr="content:meta.contact.desc">
+  <meta property="og:url" content="https://itsmilet.github.io/meine-webseite/kontakt.html">
+  <meta property="og:image" content="https://itsmilet.github.io/meine-webseite/assets/img/og-bild.png">
+  <meta property="og:locale" content="de_AT">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/early.js"></script>
+</head>
+<body data-page="kontakt">
+  <a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+  <header id="site-header"></header>
+
+  <main id="inhalt">
+
+    <header class="container page-head">
+      <span class="eyebrow reveal" data-i18n="contact.eyebrow">Kontakt</span>
+      <h1 class="reveal" data-i18n-html="contact.title">Lass uns <em>reden</em></h1>
+      <p class="lead reveal ph-text" data-i18n="contact.lead">[PLATZHALTER: ein einladender Absatz, z. B. dass du dich über jede Nachricht freust, ob konkrete Projektidee, Frage oder einfach ein Hallo, und wie schnell du normalerweise antwortest]</p>
+    </header>
+
+    <section class="container" aria-labelledby="form-title" style="padding-bottom: clamp(4rem, 9vw, 7rem)">
+      <div class="contact-layout">
+
+        <!-- ALTERNATIVE WEGE -->
+        <aside class="stack-lg reveal" aria-labelledby="ways-title">
+          <div class="stack">
+            <h2 id="ways-title" style="font-size: var(--step-2)" data-i18n="contact.ways.title">Lieber direkt?</h2>
+            <p class="muted" data-i18n="contact.ways.text">Du kannst mich auch auf diesen Wegen erreichen.</p>
+          </div>
+          <ul class="contact-ways">
+            <li>
+              <span class="label" data-i18n="contact.ways.mail">E-Mail</span>
+              <!-- E-MAIL ERSETZEN: an beiden Stellen (href und Text) -->
+              <a class="link" href="mailto:[PLATZHALTER: deine E-Mail-Adresse]">[PLATZHALTER: deine E-Mail-Adresse]</a>
+            </li>
+            <li>
+              <span class="label">LinkedIn</span>
+              <a class="link" href="[PLATZHALTER: Link zu LinkedIn]" rel="me noopener" target="_blank">[PLATZHALTER: LinkedIn-Profil]</a>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <a class="link" href="[PLATZHALTER: Link zu GitHub]" rel="me noopener" target="_blank">[PLATZHALTER: GitHub-Profil]</a>
+            </li>
+            <li>
+              <span class="label">Instagram</span>
+              <a class="link" href="[PLATZHALTER: Link zu Instagram]" rel="me noopener" target="_blank">[PLATZHALTER: Instagram-Profil]</a>
+            </li>
+          </ul>
+          <p class="hand" data-i18n="contact.ways.note">Ich freu mich auf deine Nachricht!</p>
+        </aside>
+
+        <!-- KONTAKTFORMULAR
+             ============================================================
+             FORMSPREE-ID HIER EINTRAGEN:
+             Ersetze im action-Attribut "[PLATZHALTER: Formspree-ID]"
+             durch deine ID, z. B. https://formspree.io/f/abcdwxyz
+             ============================================================ -->
+        <div class="stack-lg reveal" style="--delay:.1s">
+          <h2 id="form-title" style="font-size: var(--step-2)" data-i18n="contact.form.title">Schreib mir eine Nachricht</h2>
+
+          <form id="contact-form" class="form" action="https://formspree.io/f/[PLATZHALTER: Formspree-ID]" method="POST" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name"><span data-i18n="contact.form.name">Name</span> <span class="req" aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+                <span class="field-error" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="field">
+                <label for="email"><span data-i18n="contact.form.email">E-Mail</span> <span class="req" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <span class="field-error" id="email-error" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="subject"><span data-i18n="contact.form.subject">Betreff</span> <span class="req" aria-hidden="true">*</span></label>
+              <input id="subject" name="_subject" type="text" required aria-describedby="subject-error">
+              <span class="field-error" id="subject-error" aria-live="polite"></span>
+            </div>
+
+            <div class="field">
+              <label for="message"><span data-i18n="contact.form.message">Nachricht</span> <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="7" required aria-describedby="message-error" placeholder="Erzähl mir von deiner Idee …" data-i18n-attr="placeholder:contact.form.messagePh"></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <!-- Honeypot gegen Spam: bleibt für Menschen unsichtbar und leer -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Bitte leer lassen</label>
+              <input id="website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="check-wrap">
+              <div class="check">
+                <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+                <label for="consent" data-i18n-html="contact.form.consent">Ich habe die <a class="link" href="datenschutz.html" style="text-decoration:underline">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verarbeitet werden. *</label>
+              </div>
+              <span class="field-error" id="consent-error" aria-live="polite"></span>
+            </div>
+
+            <p class="muted" style="font-size: var(--step--1)" data-i18n="contact.form.required">Felder mit * sind Pflichtfelder.</p>
+
+            <div>
+              <button class="btn" type="submit"><span data-i18n="contact.form.send">Nachricht senden</span> <span class="arrow" aria-hidden="true">→</span></button>
+            </div>
+
+            <div class="form-status" id="form-status" role="status" tabindex="-1"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <nav class="next-step" aria-label="Weiterlesen" data-i18n-attr="aria-label:next.label">
+      <div class="container">
+        <a href="index.html" class="reveal">
+          <span class="eyebrow" data-i18n="next.eyebrow">Weiterlesen</span>
+          <span class="next-title"><span data-i18n="contact.next">Noch einmal von vorne beginnen</span> <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Favicon: Monogramm "FW" auf Creme mit Terrakotta-Punkt -->
+  <rect width="64" height="64" rx="14" fill="#F5EFE4"/>
+  <text x="8" y="45" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-style="italic" fill="#2B2420">FW</text>
+  <circle cx="54" cy="44" r="4" fill="#A94B25"/>
+</svg>

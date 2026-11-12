@@ -1,0 +1,147 @@
+<!doctype html>
+<!--
+  VORLAGE FÜR EINE PROJEKT-DETAILSEITE
+  So legst du ein neues Projekt an:
+    1. Diese Datei kopieren und umbenennen, z. B. projekte/baeckerei-mayer.html
+    2. Texte und Bilder ersetzen (die Platzhalter sind mit [PLATZHALTER: …] markiert)
+    3. In projekte.html den Link der passenden Projektkarte auf die neue Datei setzen
+  Wichtig: Diese Seite liegt in einem Unterordner, darum beginnen alle Pfade mit "../".
+-->
+<html lang="de" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.case.title">Projekt · Felix Werthner</title>
+  <meta name="description" content="Projektbeschreibung: Ausgangslage, Vorgehen und Ergebnis eines Webprojekts von Felix Werthner." data-i18n-attr="content:meta.case.desc">
+  <meta name="theme-color" content="#F5EFE4">
+  <link rel="canonical" href="https://itsmilet.github.io/meine-webseite/projekte/projekt-vorlage.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Felix Werthner">
+  <meta property="og:title" content="Projekt · Felix Werthner" data-i18n-attr="content:meta.case.title">
+  <meta property="og:description" content="Ausgangslage, Vorgehen und Ergebnis eines Webprojekts." data-i18n-attr="content:meta.case.desc">
+  <meta property="og:url" content="https://itsmilet.github.io/meine-webseite/projekte/projekt-vorlage.html">
+  <meta property="og:image" content="https://itsmilet.github.io/meine-webseite/assets/img/og-bild.png">
+  <meta property="og:locale" content="de_AT">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/early.js"></script>
+</head>
+<body data-page="projekte">
+  <a class="skip-link" href="#inhalt" data-i18n="a11y.skip">Zum Inhalt springen</a>
+  <header id="site-header"></header>
+
+  <main id="inhalt">
+
+    <article>
+      <header class="container page-head">
+        <a class="arrow-link reveal" href="../projekte.html"><span class="arrow" aria-hidden="true">←</span> <span data-i18n="case.back">Alle Projekte</span></a>
+        <span class="eyebrow reveal" data-i18n="case.eyebrow">Projekt Nr. 01</span>
+        <h1 class="reveal ph-text" data-i18n="case.title">[PLATZHALTER: Projekttitel]</h1>
+        <p class="lead reveal ph-text" data-i18n="case.lead">[PLATZHALTER: ein Satz, der das Projekt zusammenfasst: für wen, was und mit welchem Ergebnis]</p>
+
+        <dl class="case-facts reveal">
+          <div><dt data-i18n="case.f.client">Auftrag für</dt><dd class="ph-text" data-i18n="case.f.clientV">[PLATZHALTER: Kunde / Organisation]</dd></div>
+          <div><dt data-i18n="case.f.year">Jahr</dt><dd>[PLATZHALTER: 2025]</dd></div>
+          <div><dt data-i18n="case.f.role">Meine Rolle</dt><dd class="ph-text" data-i18n="case.f.roleV">[PLATZHALTER: z. B. Gestaltung &amp; Umsetzung]</dd></div>
+          <div><dt data-i18n="case.f.tech">Technik</dt><dd>HTML · CSS · JavaScript</dd></div>
+          <div><dt data-i18n="case.f.link">Live ansehen</dt><dd><a class="link" href="[PLATZHALTER: Link zur fertigen Webseite]" target="_blank" rel="noopener" style="color: var(--accent)" data-i18n="case.f.linkV">[PLATZHALTER: Webseite]</a></dd></div>
+        </dl>
+      </header>
+
+      <div class="container">
+        <figure class="frame reveal">
+          <div class="frame-media corners" style="--ratio: 16 / 9">
+            <!-- BILD ERSETZEN: <img src="../assets/img/projekt-1-gross.jpg" alt="…" width="1920" height="1080"> -->
+            <div class="ph-img" role="img" aria-label="Platzhalter für das Hauptbild des Projekts" data-i18n-attr="aria-label:case.img1Alt">
+              <strong data-i18n="case.img1">[PLATZHALTER: großes Hauptbild, z. B. Startseite des Projekts auf Laptop und Handy]</strong>
+              <span data-i18n="img.wide169">Breitformat 16:9 · ca. 1920 × 1080 px</span>
+            </div>
+          </div>
+          <figcaption><span class="fig-no">Abb. 1</span><span class="ph-text" data-i18n="case.cap1">[PLATZHALTER: Bildunterschrift]</span></figcaption>
+        </figure>
+      </div>
+
+      <section class="section" aria-labelledby="start-title">
+        <div class="container case-section">
+          <div class="reveal"><span class="step-no">I.</span><h2 id="start-title" style="font-size: var(--step-2)" data-i18n="case.start">Ausgangslage</h2></div>
+          <div class="prose reveal">
+            <p class="ph-text" data-i18n="case.start.p1">[PLATZHALTER: Wie war die Situation, bevor du ins Spiel gekommen bist? Was hat die Kundschaft gestört, was hat gefehlt, was war das Ziel? Drei bis fünf Sätze.]</p>
+            <p class="ph-text" data-i18n="case.start.p2">[PLATZHALTER: Welche Rahmenbedingungen gab es, z. B. Budget, Zeitplan oder bestehende Inhalte?]</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="process-title">
+        <div class="container case-section">
+          <div class="reveal"><span class="step-no">II.</span><h2 id="process-title" style="font-size: var(--step-2)" data-i18n="case.process">Vorgehen</h2></div>
+          <div class="stack-lg">
+            <div class="prose reveal">
+              <p class="ph-text" data-i18n="case.process.p1">[PLATZHALTER: Wie bist du vorgegangen? Zum Beispiel Gespräch, Skizzen, Entwurf, Umsetzung, Test. Drei bis fünf Sätze.]</p>
+              <ul>
+                <li class="ph-text" data-i18n="case.process.l1">[PLATZHALTER: wichtiger Schritt oder Entscheidung 1]</li>
+                <li class="ph-text" data-i18n="case.process.l2">[PLATZHALTER: wichtiger Schritt oder Entscheidung 2]</li>
+                <li class="ph-text" data-i18n="case.process.l3">[PLATZHALTER: wichtiger Schritt oder Entscheidung 3]</li>
+              </ul>
+            </div>
+            <div class="case-gallery">
+              <figure class="frame reveal">
+                <div class="frame-media" style="--ratio: 4 / 3">
+                  <div class="ph-img" role="img" aria-label="Platzhalter für ein Prozessbild" data-i18n-attr="aria-label:case.img2Alt">
+                    <strong data-i18n="case.img2">[PLATZHALTER: Skizze oder früher Entwurf]</strong>
+                    <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+                  </div>
+                </div>
+                <figcaption><span class="fig-no">Abb. 2</span><span class="ph-text" data-i18n="case.cap2">[PLATZHALTER: Bildunterschrift]</span></figcaption>
+              </figure>
+              <figure class="frame reveal" style="--delay:.1s">
+                <div class="frame-media" style="--ratio: 4 / 3">
+                  <div class="ph-img" role="img" aria-label="Platzhalter für ein Detailbild" data-i18n-attr="aria-label:case.img3Alt">
+                    <strong data-i18n="case.img3">[PLATZHALTER: Detail, z. B. Farbpalette oder Typografie]</strong>
+                    <span data-i18n="img.landscape43">Querformat 4:3 · ca. 1600 × 1200 px</span>
+                  </div>
+                </div>
+                <figcaption><span class="fig-no">Abb. 3</span><span class="ph-text" data-i18n="case.cap3">[PLATZHALTER: Bildunterschrift]</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="result-title">
+        <div class="container case-section">
+          <div class="reveal"><span class="step-no">III.</span><h2 id="result-title" style="font-size: var(--step-2)" data-i18n="case.result">Ergebnis</h2></div>
+          <div class="stack-lg">
+            <div class="prose reveal">
+              <p class="ph-text" data-i18n="case.result.p1">[PLATZHALTER: Was ist herausgekommen? Was hat sich für die Kundschaft verbessert? Gern mit einer konkreten Beobachtung oder Zahl.]</p>
+              <blockquote class="hand ph-text" data-i18n="case.result.quote">[PLATZHALTER: kurzes Zitat der Kundschaft]</blockquote>
+            </div>
+            <figure class="frame reveal">
+              <div class="frame-media" style="--ratio: 16 / 9">
+                <div class="ph-img" role="img" aria-label="Platzhalter für ein Bild des Ergebnisses" data-i18n-attr="aria-label:case.img4Alt">
+                  <strong data-i18n="case.img4">[PLATZHALTER: fertige Seite im Einsatz]</strong>
+                  <span data-i18n="img.wide169">Breitformat 16:9 · ca. 1920 × 1080 px</span>
+                </div>
+              </div>
+              <figcaption><span class="fig-no">Abb. 4</span><span class="ph-text" data-i18n="case.cap4">[PLATZHALTER: Bildunterschrift]</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <nav class="next-step" aria-label="Weiterlesen" data-i18n-attr="aria-label:next.label">
+      <div class="container">
+        <a href="../kontakt.html" class="reveal">
+          <span class="eyebrow" data-i18n="next.eyebrow">Weiterlesen</span>
+          <span class="next-title"><span data-i18n="case.next">So etwas für dich? Schreib mir</span> <span class="arrow" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
