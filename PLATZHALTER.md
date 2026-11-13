@@ -33,7 +33,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] Ausbildung, z. B. HTL für Informationstechnologie
 - [ ] ein, zwei einladende Sätze, z. B. dass ein erstes Gespräch unverbindlich ist und wie schnell du dich meldest
 
-## Über mich (ueber-mich.html)
+## Über mich (seiten/ueber-mich.html)
 
 - [ ] ein einladender Einstiegssatz über dich, z. B. in welcher Lebenslage du gerade bist und was du hier zeigen möchtest
 - [ ] Foto von dir bei der Arbeit oder unterwegs
@@ -57,7 +57,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] Bild zu Interesse 3
 - [ ] Interesse 3
 
-## Projekte (projekte.html)
+## Projekte (seiten/projekte.html)
 
 - [ ] ein, zwei Sätze zur Auswahl, z. B. welche Art von Projekten du hier zeigst und was sie verbindet
 - [ ] Bild Projekt 1
@@ -78,7 +78,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] Jahreszahl 2022 (steht direkt im HTML)
 - [ ] Projekttitel 6
 
-## Projekt-Vorlage (projekte/projekt-vorlage.html)
+## Projekt-Vorlage (seiten/projekte/projekt-vorlage.html)
 
 - [ ] Projekttitel
 - [ ] ein Satz, der das Projekt zusammenfasst: für wen, was und mit welchem Ergebnis
@@ -101,7 +101,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] kurzes Zitat der Kundschaft
 - [ ] fertige Seite im Einsatz
 
-## Werdegang (werdegang.html)
+## Werdegang (seiten/werdegang.html)
 
 - [ ] ein Satz, der deinen Weg zusammenfasst, z. B. von wo du gestartet bist und wo du heute stehst
 - [ ] Jahreszahl 2024 (steht direkt im HTML)
@@ -130,7 +130,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] Jahr
 - [ ] ein, zwei Sätze, wie alles angefangen hat.
 
-## Kontakt (kontakt.html)
+## Kontakt (seiten/kontakt.html)
 
 - [ ] ein einladender Absatz, z. B. dass du dich über jede Nachricht freust, ob konkrete Projektidee, Frage oder einfach ein Hallo, und wie schnell du normalerweise antwortest
 - [ ] deine E-Mail-Adresse
@@ -142,7 +142,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] Instagram-Profil
 - [ ] Formspree-ID
 
-## Impressum (impressum.html)
+## Impressum (seiten/impressum.html)
 
 - [ ] Unternehmensbezeichnung, falls vorhanden, z. B. „Webdesign Felix Werthner“
 - [ ] Straße und Hausnummer
@@ -159,7 +159,7 @@ Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 - [ ] wie oben
 - [ ] Quellen der Fotos, z. B. „Porträt: Name der Fotografin“ oder „alle Fotos: Felix Werthner“
 
-## Datenschutz (datenschutz.html)
+## Datenschutz (seiten/datenschutz.html)
 
 - [ ] Straße und Hausnummer
 - [ ] Postleitzahl und Ort
@@ -183,8 +183,8 @@ Jede Bildfläche nennt Format und Größe. Ersetzen siehe README, Abschnitt „B
 ## Sonstiges
 
 - [ ] `assets/docs/lebenslauf-felix-werthner.pdf`: echten Lebenslauf mit gleichem Dateinamen speichern
-- [ ] `kontakt.html`: Formspree-ID im Formular eintragen (siehe README)
-- [ ] `kontakt.html`: E-Mail-Adresse und Links zu LinkedIn, GitHub, Instagram (nicht genutzte Netzwerke einfach löschen)
+- [ ] `seiten/kontakt.html`: Formspree-ID im Formular eintragen (siehe README)
+- [ ] `seiten/kontakt.html`: E-Mail-Adresse und Links zu LinkedIn, GitHub, Instagram (nicht genutzte Netzwerke einfach löschen)
 - [ ] `about.skills`: Die Fähigkeiten und Werkzeuge auf „Über mich“ sind nur Beispiele, bitte anpassen
 - [ ] Datenschutz: Anschrift von GitHub und Formspree in deren aktuellen Datenschutzerklärungen prüfen
 - [ ] Englische Fassung: In `lang/en.json` stehen die gleichen Platzhalter auf Englisch

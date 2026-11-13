@@ -2,9 +2,9 @@
 <!-- Bei neuen Seiten hier einen <url>-Eintrag ergänzen. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://itsmilet.github.io/meine-webseite/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://itsmilet.github.io/meine-webseite/ueber-mich.html</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://itsmilet.github.io/meine-webseite/projekte.html</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://itsmilet.github.io/meine-webseite/projekte/projekt-vorlage.html</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://itsmilet.github.io/meine-webseite/werdegang.html</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://itsmilet.github.io/meine-webseite/kontakt.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://itsmilet.github.io/meine-webseite/seiten/ueber-mich.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://itsmilet.github.io/meine-webseite/seiten/projekte.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://itsmilet.github.io/meine-webseite/seiten/projekte/projekt-vorlage.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://itsmilet.github.io/meine-webseite/seiten/werdegang.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://itsmilet.github.io/meine-webseite/seiten/kontakt.html</loc><lastmod>2026-11-12</lastmod></url>
 </urlset>

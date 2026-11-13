@@ -28,10 +28,10 @@
 
   // Hauptnavigation: Seite (data-page im <body>), Datei, Übersetzungsschlüssel, deutscher Text
   var NAV = [
-    { page: "ueber-mich", href: "ueber-mich.html", key: "nav.about",    label: "Über mich" },
-    { page: "projekte",   href: "projekte.html",   key: "nav.projects", label: "Projekte" },
-    { page: "werdegang",  href: "werdegang.html",  key: "nav.cv",       label: "Werdegang" },
-    { page: "kontakt",    href: "kontakt.html",    key: "nav.contact",  label: "Kontakt" }
+    { page: "ueber-mich", href: "seiten/ueber-mich.html", key: "nav.about",    label: "Über mich" },
+    { page: "projekte",   href: "seiten/projekte.html",   key: "nav.projects", label: "Projekte" },
+    { page: "werdegang",  href: "seiten/werdegang.html",  key: "nav.cv",       label: "Werdegang" },
+    { page: "kontakt",    href: "seiten/kontakt.html",    key: "nav.contact",  label: "Kontakt" }
   ];
 
   var html = document.documentElement;
@@ -105,7 +105,7 @@
         "</div>" +
         '<div class="footer-bottom">' +
           '<span>© <span id="year"></span> Felix Werthner</span>' +
-          '<span><a href="' + ROOT + 'impressum.html" data-i18n="nav.imprint">Impressum</a> · <a href="' + ROOT + 'datenschutz.html" data-i18n="nav.privacy">Datenschutz</a></span>' +
+          '<span><a href="' + ROOT + 'seiten/impressum.html" data-i18n="nav.imprint">Impressum</a> · <a href="' + ROOT + 'seiten/datenschutz.html" data-i18n="nav.privacy">Datenschutz</a></span>' +
         "</div>" +
       "</div>";
 

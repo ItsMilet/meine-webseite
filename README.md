@@ -74,7 +74,7 @@ Bildplatzhalter sind gestaltete Flächen mit der Beschriftung, welches Bild in w
    ```
 
    Auf der Startseite beim ersten Bild `loading="lazy"` weglassen, damit es sofort lädt.
-   In `projekte/` beginnt der Pfad mit `../`, also `../assets/img/…`.
+   In `seiten/` beginnt der Pfad mit `../` (also `../assets/img/…`), in `seiten/projekte/` mit `../../`.
 3. Einen kurzen, beschreibenden Alt-Text schreiben (wichtig für Menschen mit Screenreadern).
 
 Weitere Bilder:
@@ -87,7 +87,7 @@ Weitere Bilder:
 
 1. Auf https://formspree.io ein kostenloses Konto anlegen und ein neues Formular erstellen.
 2. Formspree zeigt eine Adresse wie `https://formspree.io/f/abcdwxyz`. Der letzte Teil (`abcdwxyz`) ist deine ID.
-3. In `kontakt.html` nach `FORMSPREE-ID HIER EINTRAGEN` suchen und im `action`-Attribut `[PLATZHALTER: Formspree-ID]` durch deine ID ersetzen:
+3. In `seiten/kontakt.html` nach `FORMSPREE-ID HIER EINTRAGEN` suchen und im `action`-Attribut `[PLATZHALTER: Formspree-ID]` durch deine ID ersetzen:
 
    ```html
    <form id="contact-form" class="form" action="https://formspree.io/f/abcdwxyz" method="POST" novalidate>
