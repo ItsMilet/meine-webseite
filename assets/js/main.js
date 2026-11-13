@@ -4,7 +4,7 @@
    Inhalt:
      1. Einstellungen (Akzentfarben, Navigation)       <- hier anpassen
      2. Kopf- und Fußzeile (werden auf jeder Seite gleich eingesetzt)
-     3. Sprache (DE / EN) mit lang/de.json und lang/en.json
+     3. Sprache (DE / EN) mit lang/de.js und lang/en.js
      4. Farbmodus (hell / dunkel) und Akzentfarbe
      5. Mobiles Menü, Kopfzeile beim Scrollen
      6. Einblenden beim Scrollen, Zeitleiste
@@ -120,21 +120,27 @@
   /* 3. SPRACHE ------------------------------------------------------------ */
 
   var dict = {};           // aktuell geladene Texte
-  var cache = {};          // bereits geladene Sprachdateien
+  window.I18N = window.I18N || {};   // wird von lang/de.js und lang/en.js gefüllt
 
   // Text zu einem Schlüssel holen (mit Ersatztext, falls er fehlt)
   function t(key, fallback) {
     return Object.prototype.hasOwnProperty.call(dict, key) ? dict[key] : fallback;
   }
 
+  // Sprachdatei lang/xx.js als <script> nachladen. Anders als fetch() klappt
+  // das auch, wenn die Seite direkt als Datei (file://) geöffnet wird.
   function loadLang(lang) {
-    if (cache[lang]) return Promise.resolve(cache[lang]);
-    return fetch(ROOT + "lang/" + lang + ".json", { cache: "no-cache" })
-      .then(function (res) {
-        if (!res.ok) throw new Error(res.status);
-        return res.json();
-      })
-      .then(function (data) { cache[lang] = data; return data; });
+    if (window.I18N[lang]) return Promise.resolve(window.I18N[lang]);
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement("script");
+      s.src = ROOT + "lang/" + lang + ".js";
+      s.onload = function () {
+        if (window.I18N[lang]) resolve(window.I18N[lang]);
+        else reject(new Error("lang/" + lang + ".js enthält keine Texte"));
+      };
+      s.onerror = function () { reject(new Error("lang/" + lang + ".js nicht gefunden")); };
+      document.head.appendChild(s);
+    });
   }
 
   // Alle Texte der Seite in der gewählten Sprache einsetzen
@@ -427,7 +433,7 @@
 
 
   /* START ---------------------------------------------------------------- */
-  // Texte immer aus der Sprachdatei laden, damit Änderungen in lang/*.json
+  // Texte immer aus der Sprachdatei laden, damit Änderungen in lang/*.js
   // auch für Deutsch sofort sichtbar sind.
   setLang(html.getAttribute("data-lang") || "de", false);
 })();

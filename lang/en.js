@@ -1,6 +1,15 @@
-{
+/* ==========================================================================
+   lang/en.js – alle Texte auf Englisch
+   Links steht der Schlüssel (wie im HTML bei data-i18n), rechts der Text.
+   Die Datei ist ein JavaScript-Objekt statt JSON, damit die Übersetzung auch
+   funktioniert, wenn eine Seite per Doppelklick (file://) geöffnet wird.
+   Achte auf Anführungszeichen: Im Text \" statt " schreiben.
+   ========================================================================== */
+window.I18N = window.I18N || {};
+window.I18N.en = {
   "meta.home.title": "Felix Werthner · Websites with warmth",
   "meta.home.desc": "Felix Werthner designs and builds websites. Here you'll find my background, selected projects and a direct way to get in touch.",
+  "fig.label": "Fig.",
   "a11y.skip": "Skip to content",
   "home.hero.eyebrow": "Designing & building websites",
   "home.hero.lead": "[PLATZHALTER: One sentence about what you do, e.g. “I design and build websites that feel warm, load fast and simply work.”]",
@@ -318,4 +327,4 @@
   "contact.success": "Thanks for your message! I'll get back to you as soon as I can.",
   "contact.error": "Sorry, that didn't work. Please try again later or email me directly.",
   "contact.notConfigured": "The form isn't set up yet (Formspree ID missing). Please email me directly."
-}
+};

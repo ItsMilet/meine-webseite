@@ -1,6 +1,15 @@
-{
+/* ==========================================================================
+   lang/de.js – alle Texte auf Deutsch
+   Links steht der Schlüssel (wie im HTML bei data-i18n), rechts der Text.
+   Die Datei ist ein JavaScript-Objekt statt JSON, damit die Übersetzung auch
+   funktioniert, wenn eine Seite per Doppelklick (file://) geöffnet wird.
+   Achte auf Anführungszeichen: Im Text \" statt " schreiben.
+   ========================================================================== */
+window.I18N = window.I18N || {};
+window.I18N.de = {
   "meta.home.title": "Felix Werthner · Webseiten mit Wärme",
   "meta.home.desc": "Felix Werthner gestaltet und baut Webseiten. Hier findest du meinen Werdegang, ausgewählte Projekte und einen direkten Weg zum Kontakt.",
+  "fig.label": "Abb.",
   "a11y.skip": "Zum Inhalt springen",
   "home.hero.eyebrow": "Webseiten gestalten & bauen",
   "home.hero.lead": "[PLATZHALTER: Ein Satz, was du machst, z. B. „Ich gestalte und baue Webseiten, die sich warm anfühlen, schnell laden und einfach funktionieren.“]",
@@ -318,4 +327,4 @@
   "contact.success": "Danke für deine Nachricht! Ich melde mich so bald wie möglich bei dir.",
   "contact.error": "Das hat leider nicht geklappt. Bitte versuch es später noch einmal oder schreib mir direkt per E-Mail.",
   "contact.notConfigured": "Das Formular ist noch nicht eingerichtet (Formspree-ID fehlt). Schreib mir bitte direkt per E-Mail."
-}
+};

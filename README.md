@@ -10,9 +10,10 @@ Persönliche Webseite von Felix Werthner: wer ich bin, mein Werdegang, meine Pro
 
 | Pfad | Inhalt |
 |---|---|
-| `*.html` | die Seiten (Start, Über mich, Projekte, Werdegang, Kontakt, Impressum, Datenschutz, 404) |
-| `projekte/projekt-vorlage.html` | Vorlage für eine Projekt-Detailseite |
-| `lang/de.json`, `lang/en.json` | **alle Texte** auf Deutsch und Englisch |
+| `index.html`, `404.html` | Startseite und Fehlerseite (bleiben in der Hauptebene, das verlangt GitHub Pages) |
+| `seiten/*.html` | alle Unterseiten (Über mich, Projekte, Werdegang, Kontakt, Impressum, Datenschutz) |
+| `seiten/projekte/projekt-vorlage.html` | Vorlage für eine Projekt-Detailseite |
+| `lang/de.js`, `lang/en.js` | **alle Texte** auf Deutsch und Englisch |
 | `assets/css/style.css` | Gestaltung, Farben, Schriften |
 | `assets/js/early.js` | setzt Farbmodus, Akzentfarbe und Sprache, bevor die Seite erscheint |
 | `assets/js/main.js` | Kopf- und Fußzeile, Sprache, Hell/Dunkel, Animationen, Filter, Formular |
@@ -22,7 +23,7 @@ Persönliche Webseite von Felix Werthner: wer ich bin, mein Werdegang, meine Pro
 
 ## Seite lokal ansehen
 
-Die Texte werden aus `lang/*.json` geladen. Das klappt nicht, wenn du eine HTML-Datei per Doppelklick öffnest (`file://`), dann siehst du nur die deutschen Grundtexte. Starte stattdessen einen kleinen Server im Ordner, zum Beispiel:
+Die Texte werden aus `lang/*.js` geladen. Das klappt auch, wenn du eine HTML-Datei einfach per Doppelklick öffnest (`file://`), inklusive Umschalten auf Englisch. Mit einem kleinen Server im Ordner verhält sich die Seite aber genau wie online, zum Beispiel:
 
 ```bash
 npx serve .
@@ -32,7 +33,7 @@ oder in VS Code mit der Erweiterung „Live Server“.
 
 ## Texte ändern
 
-1. Öffne `lang/de.json` (Deutsch) und `lang/en.json` (Englisch).
+1. Öffne `lang/de.js` (Deutsch) und `lang/en.js` (Englisch).
 2. Suche den Text, den du ändern willst, und ersetze ihn. Der Schlüssel links (z. B. `"home.hero.lead"`) bleibt gleich.
 3. Ändere immer beide Sprachen.
 
@@ -40,10 +41,10 @@ Gut zu wissen:
 
 - Im HTML steht der deutsche Text noch einmal. Er dient nur Suchmaschinen und Browsern ohne JavaScript. Wenn du einen Text änderst, passe ihn am besten auch dort an (Suche nach dem Schlüssel, z. B. `data-i18n="home.hero.lead"`).
 - Manche Texte enthalten HTML, etwa `<em>…</em>` für das farbige, kursive Wort in Überschriften. Das steht bei Schlüsseln, die im HTML mit `data-i18n-html` markiert sind.
-- Navigation und Fußzeile stehen in `assets/js/main.js` (Abschnitt 1 und 2). Die Texte dafür kommen ebenfalls aus den JSON-Dateien (`nav.…`, `footer.…`).
-- Neue Projekte: in `projekte.html` eine Projektkarte (`<li class="project-card">`) kopieren. Für die Detailseite `projekte/projekt-vorlage.html` kopieren und umbenennen. Die Anleitung steht oben in den Dateien.
-- Neue Station im Werdegang: in `werdegang.html` ein `<li class="timeline-item">` kopieren.
-- Für neue Texte einen neuen Schlüssel ausdenken, im HTML als `data-i18n="mein.schluessel"` eintragen und in beiden JSON-Dateien ergänzen.
+- Navigation und Fußzeile stehen in `assets/js/main.js` (Abschnitt 1 und 2). Die Texte dafür kommen ebenfalls aus den Sprachdateien (`nav.…`, `footer.…`).
+- Neue Projekte: in `seiten/projekte.html` eine Projektkarte (`<li class="project-card">`) kopieren. Für die Detailseite `seiten/projekte/projekt-vorlage.html` kopieren und umbenennen. Die Anleitung steht oben in den Dateien.
+- Neue Station im Werdegang: in `seiten/werdegang.html` ein `<li class="timeline-item">` kopieren.
+- Für neue Texte einen neuen Schlüssel ausdenken, im HTML als `data-i18n="mein.schluessel"` eintragen und in beiden Sprachdateien ergänzen.
 
 ## Farben ändern
 
@@ -58,7 +59,7 @@ Alle Farben stehen ganz oben in `assets/css/style.css` im Abschnitt **2. FARBEN 
 1. In `style.css` zwei Variablen anlegen, z. B. `--ocker-l: #8A5A12; --ocker-d: #E2B266;`
 2. Darunter eine Zeile wie bei den anderen ergänzen: `[data-accent="ocker"] { --accent-l: var(--ocker-l); --accent-d: var(--ocker-d); }`
 3. Bei `.accent-swatch[data-accent-value="…"]` eine Zeile für die Farbe des Knopfes ergänzen.
-4. In `assets/js/main.js` in der Liste `ACCENTS` einen Eintrag hinzufügen und in beiden JSON-Dateien den Namen (`accent.ocker`).
+4. In `assets/js/main.js` in der Liste `ACCENTS` einen Eintrag hinzufügen und in beiden Sprachdateien den Namen (`accent.ocker`).
 
 Die Standardfarbe ist Terrakotta. Sie gilt, solange ein Besucher nichts anderes wählt.
 

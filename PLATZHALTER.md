@@ -3,7 +3,7 @@
 Alle Stellen, die noch durch echte Inhalte ersetzt werden müssen, nach Seite sortiert.
 Im Code und in den Sprachdateien sind sie einheitlich als `[PLATZHALTER: …]` markiert. Suche einfach nach `PLATZHALTER`.
 
-**Wichtig:** Texte am besten in `lang/de.json` und `lang/en.json` ändern (siehe README). Platzhalter, die nur im HTML stehen (Links, E-Mail, Jahreszahlen, Formspree-ID), direkt in der HTML-Datei ersetzen.
+**Wichtig:** Texte am besten in `lang/de.js` und `lang/en.js` ändern (siehe README). Platzhalter, die nur im HTML stehen (Links, E-Mail, Jahreszahlen, Formspree-ID), direkt in der HTML-Datei ersetzen.
 
 Tipp: Zum Abhaken einfach `- [ ]` durch `- [x]` ersetzen.
 
@@ -187,4 +187,4 @@ Jede Bildfläche nennt Format und Größe. Ersetzen siehe README, Abschnitt „B
 - [ ] `seiten/kontakt.html`: E-Mail-Adresse und Links zu LinkedIn, GitHub, Instagram (nicht genutzte Netzwerke einfach löschen)
 - [ ] `about.skills`: Die Fähigkeiten und Werkzeuge auf „Über mich“ sind nur Beispiele, bitte anpassen
 - [ ] Datenschutz: Anschrift von GitHub und Formspree in deren aktuellen Datenschutzerklärungen prüfen
-- [ ] Englische Fassung: In `lang/en.json` stehen die gleichen Platzhalter auf Englisch
+- [ ] Englische Fassung: In `lang/en.js` stehen die gleichen Platzhalter auf Englisch
